@@ -36,7 +36,7 @@ runs:
   using: composite
   steps:
     - name: Install split_tests
-      run: curl -L "https://github.com/leonid-shevtsov/split_tests/releases/latest/download/split_tests.linux.gz" | gunzip -v > split_tests && chmod +x split_tests
+      run: curl -L "https://github.com/payfazz/ci_split_tests/releases/latest/download/split_tests.linux.gz" | gunzip -v > split_tests && chmod +x split_tests
       shell: bash
     - name: Split Tests
       id: split-tests
